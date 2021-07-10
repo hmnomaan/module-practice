@@ -11,7 +11,7 @@
     @keyframes sliding {
 
         0% {
-            background-color: royalblue;
+            background-color: yellow;
             left: 0;
             top: 0;
 
@@ -19,7 +19,7 @@
         }
 
         25% {
-            background-color: tomato;
+            background-color: red;
 
             top: 300px;
 
@@ -52,6 +52,31 @@
         background-color: green;
     }
 
+    @keyframes pingbar {
+        from {
+            left: 30px;
+        }
+
+        to {
+            left: 510px;
+        }
+    }
+
+    .pingpong {
+        width: 70px;
+        height: 10px;
+        background-color: rgb(255, 155, 40);
+        position: absolute;
+
+    }
+
+    .pingpong {
+        left: 100px;
+        bottom: 254px;
+        animation: pingbar 2s ease-in-out 0.5s infinite alternate;
+        animation-play-state: running;
+    }
+
     .ball {
         width: 100px;
         height: 100px;
@@ -68,6 +93,7 @@
     <h1>Lets Explore more Animation</h1>
     <div class="stage">
         <div class="ball"></div>
+        <div class="pingpong"></div>
     </div>
 </body>
 
