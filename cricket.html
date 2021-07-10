@@ -35,14 +35,25 @@
             transform: translate(900px, -900px);
         }
 
-        .six p {
+        .field:hover .six p {
             background-color: red;
-            height: 300px;
-            width: 300px;
-            font-size: 105px;
+            position: fixed;
+            height: 200px;
+            width: 200px;
+            font-size: 205px;
             color: white;
             font-weight: 900;
+            left: 600px;
+            bottom: 200px;
+            padding-left: 150px;
 
+        }
+
+
+
+
+        .field p::before {
+            display: none;
         }
     </style>
 </head>
