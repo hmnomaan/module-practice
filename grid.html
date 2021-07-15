@@ -1,18 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GRid</title>
+    <style>
+        .grid-view {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-row-gap: 10px;
+        }
+        
+        .grid {
+            border: 1px solid purple;
+            margin-right: 10px;
+            font-size: 6em;
+        }
+    </style>
 </head>
+
 <body>
-    <Section>
+    <Section class="grid-view">
 
-        <p>
-
-            Hello GRid
-        </p>
+        <div class="grid">
+            <p>lorem</p>
+        </div>
+        <div class="grid">
+            <p>lorem</p>
+        </div>
+        <div class="grid">
+            <p>lorem</p>
+        </div>
+        <div class="grid">
+            <p>lorem</p>
+        </div>
     </Section>
 </body>
+
 </html>
